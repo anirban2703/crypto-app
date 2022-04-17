@@ -1,0 +1,61 @@
+.crypto-container{
+    height: 3rem;
+    width: 100%;
+    margin: 0.15rem auto;
+    color: #fff;
+    background-color: #383838;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem 0 2rem;
+    font-size: 0.8rem;
+}
+
+.symbol{
+    display: block;
+    font-size: 0.5rem;
+}
+
+
+.name{
+    width: 40%;
+    text-align: center;
+    margin-right: 0.8rem;
+}
+
+.serial{
+    width:24%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.description{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.red{
+
+    color: red;
+}
+.green{
+    color: green;
+}
+
+@media only screen and (max-width: 600px) {
+    .crypto-container{
+        padding: 1rem ;
+        font-size: 0.5rem;
+    }
+    .description{
+        width: 100%;
+        margin-left: 2rem;
+        justify-content: flex-end;
+    }
+    .description td{
+        margin-right: 1.4rem;
+    }
+
+}
