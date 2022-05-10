@@ -21,12 +21,22 @@ function App() {
      axios.get(api)
      .then( resp =>{
          setCoins(resp.data.data)
-        //  console.log(resp.data.data)
+        //  console.log(resp.data.data
+        //  setbgColor()
+        {
+
+        }
        })
      .catch( err =>{
         console.log(err)
      }) 
   });
+
+  // const setbgColor = () => {
+  //   let content = document.querySelector('#crypto-box');
+
+  //     } 
+
 
   const seachCoin = ele => { setSearch(ele.target.value) }
 
@@ -36,7 +46,9 @@ function App() {
 
   const displayCoins = filteredSearch.slice(pageVisited, pageVisited+coinsPerPage).map( coin => {
       return(
+        <div id='crypto-box'>
           <Cryptocomp key={coin.id}  coin={coin} loading={loading} />
+        </div>
       )
      })
 
